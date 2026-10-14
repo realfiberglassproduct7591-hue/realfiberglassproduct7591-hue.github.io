@@ -107,9 +107,9 @@ footer{background:#061a2a;color:#b8cbd6;padding:30px 20px;text-align:center;font
 <div class="contact-box">
 <h3>REAL FIBER GLASS PRODUCTS</h3>
 <p>For waterproofing enquiries, share your project location, approximate area and type of waterproofing required.</p>
-<p><strong>Phone / WhatsApp:</strong><br><span>Replace this with your nana's number</span></p>
-<p><strong>Email:</strong><br><span>Replace this with your business email</span></p>
-<p class="muted" style="color:#b8d0dc">We have left contact details blank so no personal information is published without your approval.</p>
+<p><strong>Phone / WhatsApp:</strong><br><span>+91 97570 12387</span></p>
+<p><strong>Email:</strong><br><a href="mailto:hamza.shaikh141214@gmail.com" style="color:inherit;text-decoration:underline">hamza.shaikh141214@gmail.com</a></p>
+<p class="muted" style="color:#b8d0dc">Email us for project enquiries and quotation requests.</p>
 </div>
 <form class="form" onsubmit="sendEnquiry(event)">
 <input id="name" placeholder="Your name" required>
@@ -130,7 +130,7 @@ footer{background:#061a2a;color:#b8cbd6;padding:30px 20px;text-align:center;font
 document.getElementById("year").textContent=new Date().getFullYear();
 function sendEnquiry(e){
  e.preventDefault();
- const whatsappNumber="REPLACE_WITH_WHATSAPP_NUMBER";
+ const whatsappNumber="919757012387";
  const text=`Waterproofing enquiry%0AName: ${encodeURIComponent(document.getElementById("name").value)}%0APhone: ${encodeURIComponent(document.getElementById("phone").value)}%0ALocation: ${encodeURIComponent(document.getElementById("location").value)}%0AArea: ${encodeURIComponent(document.getElementById("area").value)}%0ARequirement: ${encodeURIComponent(document.getElementById("message").value)}`;
  if(whatsappNumber.startsWith("REPLACE")) alert("First add your business WhatsApp number in the website code.");
  else window.open(`https://wa.me/${whatsappNumber}?text=${text}`,"_blank");
